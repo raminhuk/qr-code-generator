@@ -1,6 +1,7 @@
+import HomePage from './components/Home'
 
 export default function Home() {
     return (
-        <h1>Generate your custom QR Code</h1>
+        <HomePage/>
     )
 }

@@ -17,7 +17,10 @@ const config: Config = {
             },
             screens: {
                 xs: '480px',
-            }
+            },
+            boxShadow: {
+                'custom': '0px 0px 12px 0px rgba(0,0,0,0.15)',
+            },
         },
         container: {
             center: true,

@@ -1,4 +1,4 @@
-export default function QRCode() {
+export default function QRCodeLogo() {
     return (
         <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.56 0H0V2.56H2.56V0Z" fill="#3A7BD5" />

@@ -1,5 +1,6 @@
 import './globals.css'
 
+import { AntdRegistry } from '@ant-design/nextjs-registry'
 import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
 
@@ -61,9 +62,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={poppins.className}>
-                <Header />
-                {children}
-                <Footer />
+                <AntdRegistry>
+                    <Header />
+                    {children}
+                    <Footer />
+                </AntdRegistry>
             </body>
             {/* <GoogleAnalytics gaId={GA_TRACKING_ID} />
             <GoogleTagManager gtmId={GA_TAGMANAGER_ID} /> */}
