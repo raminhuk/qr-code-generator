@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         description: 'Create custom QR codes for any text quickly and easily. Simply enter your desired text and generate your personalized QR code in seconds with a few clicks!',
         siteName: 'Fabra Code',
         images: [{
-            url: 'https://raw.githubusercontent.com/raminhuk/fabra-dev/master/public/images/frontend-developer.png',
+            url: 'https://raw.githubusercontent.com/raminhuk/qr-code-generator/master/public/images/qrcodefabra.png',
         }],
     },
     twitter: {
