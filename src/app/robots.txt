@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://qrcode.fabra.dev/sitemap.xml
