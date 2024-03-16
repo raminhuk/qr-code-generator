@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { AntdRegistry } from '@ant-design/nextjs-registry'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
 
@@ -51,7 +52,7 @@ export const viewport: Viewport = {
     themeColor: '#0c121e'
 }
 
-// export const GA_TRACKING_ID: string = 'G-CSXQC9RNJD'
+export const GA_TRACKING_ID: string = 'G-X084Q2PSFK'
 // export const GA_TAGMANAGER_ID: string = 'GTM-NSVBBRH9'
 
 export default function RootLayout({
@@ -68,8 +69,8 @@ export default function RootLayout({
                     <Footer />
                 </AntdRegistry>
             </body>
-            {/* <GoogleAnalytics gaId={GA_TRACKING_ID} />
-            <GoogleTagManager gtmId={GA_TAGMANAGER_ID} /> */}
+            <GoogleAnalytics gaId={GA_TRACKING_ID} />
+            {/* <GoogleTagManager gtmId={GA_TAGMANAGER_ID} /> */}
         </html>
     )
 }
