@@ -104,7 +104,6 @@ export default function HomePage() {
     }
 
     const handleChange = (info: any) => {
-        console.log(info)
         if (info.file.status === 'done') {
             const reader = new FileReader()
             reader.onload = (e) => {
@@ -114,7 +113,7 @@ export default function HomePage() {
             }
             reader.readAsDataURL(info.file.originFileObj)
         } else if (info.file.status === 'error') {
-            console.log(`${info.file.name} upload failed.`)
+            message.error(`${info.file.name} upload failed.`)
         }
     }
 
@@ -172,6 +171,7 @@ export default function HomePage() {
                                     onChange={handleChange}
                                     onRemove={handleChangeRemove}
                                     className="flex flex-col"
+                                    action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
                                 >
                                     <Button
                                         className="w-full flex-1 bg-white"
