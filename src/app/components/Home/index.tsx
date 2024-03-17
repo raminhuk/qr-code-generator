@@ -104,6 +104,7 @@ export default function HomePage() {
     }
 
     const handleChange = (info: any) => {
+        console.log(info)
         if (info.file.status === 'done') {
             const reader = new FileReader()
             reader.onload = (e) => {
@@ -113,7 +114,7 @@ export default function HomePage() {
             }
             reader.readAsDataURL(info.file.originFileObj)
         } else if (info.file.status === 'error') {
-            console.error(`${info.file.name} upload failed.`)
+            console.log(`${info.file.name} upload failed.`)
         }
     }
 
